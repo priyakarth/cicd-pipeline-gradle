@@ -13,8 +13,8 @@ pipeline {
       stage ('Image Build') {
       steps {
     
-       sh ' docker build -t priyakarth/sampleapp .'
-       sh ' docker push priyakarth/jnekins'
+       sh "docker build -t priyakarth/sampleapp ."
+       sh  "docker push priyakarth/jnekins"
        }
       }
       }
