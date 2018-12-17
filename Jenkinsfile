@@ -12,11 +12,13 @@ pipeline {
       
       stage ('Image Build') {
       steps {
+       script {
     
        sh "docker build -t priyakarth/sampleapp ."
        sh  "docker push priyakarth/jnekins"
        }
       }
+      }  
       }
         }
        }
