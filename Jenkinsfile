@@ -13,7 +13,7 @@ pipeline {
       stage ('Image Build') {
       steps {
        sh 'sudo docker build -t priyakarth/sampleapp .'
-       sh 'docker push priyakarth/jnekins'
+       sh 'sudo docker push priyakarth/jnekins'
       }
       }
         }
