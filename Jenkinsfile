@@ -40,6 +40,8 @@ steps {
 script {
 
 sh "docker build -t priyakarth/sampleapp ."
+sh "docker login --username=priyakarth --password=sairam"
+sh "docker push priyakarth/jnekins"    
 
 }
 
